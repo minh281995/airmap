@@ -730,4 +730,5 @@ void MQ136Setup(GPIO_TypeDef* MQ136Port, uint16_t MQ136Pin)
 	ADC1->CR2 |= CR2_CAL_Set;
 	/* Check the end of ADC1 calibration */
 	while(ADC_GetCalibrationStatus(ADC1));
+        /* kiem tra thong tin*/
 }
